@@ -1,0 +1,71 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+    height: var(--default-layout-header-height, 60px);
+}
+
+.inner {
+    height: 100%;
+    display: flex;
+    padding: 0 var(--default-layout-horizontal-spacer);
+    justify-content: space-between;
+    align-items: center;
+    width: var(--default-layout-width, 1150px);
+}
+
+.logo {
+    display: flex;
+}
+
+
+.more-btn {
+    padding: 0 15px;
+    font-size: 2rem;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    padding: 0px 6px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: var(--font-family);
+    background-color: var(--primary);
+}
+
+//user login
+.user-avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.action-btn {
+    color: #161823;
+    font-size: 2.2rem;
+    padding: 4px 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
