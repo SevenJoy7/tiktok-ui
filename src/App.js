@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // thẻ chỉ để chứa null
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/Routes';
-import { DefaultLayout } from '~/components/Layout';
+import DefaultLayout from '~/layouts';
 
 function App() {
     return (
