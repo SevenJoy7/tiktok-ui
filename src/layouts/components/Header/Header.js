@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
+import { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCoins,
@@ -22,6 +23,7 @@ import Menu from '~/components/Popper/Menu';
 import Image from '~/components/Image';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Search from '../Searchs';
+import { ModalContext } from '~/components/ModalProvider';
 
 const cx = classNames.bind(styles);
 
@@ -94,6 +96,8 @@ function Header() {
         },
     ];
 
+    const context = useContext(ModalContext);
+
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -107,17 +111,17 @@ function Header() {
                     {currentUser ? (
                         <>
                             <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
-                                <button className={cx('action-btn')}>
+                                <button className={cx('action-btn')}  onClick={context.handleShowModal}>
                                     <UploadIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 50]} content="Message" placement="bottom">
-                                <button className={cx('action-btn')}>
+                                <button className={cx('action-btn')}  onClick={context.handleShowModal}>
                                     <MessageIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
-                                <button className={cx('action-btn')}>
+                                <button className={cx('action-btn')}  onClick={context.handleShowModal}>
                                     <InboxIcon />
                                     <span className={cx('badge')}>12</span>
                                 </button>

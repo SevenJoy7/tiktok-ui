@@ -1,9 +1,5 @@
 .wrapper {
-    width: 356px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin-top: var(--default-layout-header-height);
+    width: inherit;
     padding: 20px 0 80px 0;
     overflow-y: scroll;
 
@@ -53,11 +49,11 @@
 .login {
     padding: 16px 0;
     p {
-        color: rgba(22,24,35,.5);
+        color: rgba(22, 24, 35, 0.5);
         font-weight: 400;
         margin-bottom: 20px;
     }
-} 
+}
 
 .label {
     color: rgba(22, 24, 35, 0.75);
@@ -74,6 +70,7 @@
     padding: 0px 8px;
     margin-top: 8px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .discover {
@@ -164,5 +161,15 @@
 
     p {
         margin-left: 3px;
+    }
+}
+
+//Responsive
+@media screen and (max-width: 1072px) {
+    .label,
+    .footer,
+    .see-all,
+    .discover {
+        display: none;
     }
 }

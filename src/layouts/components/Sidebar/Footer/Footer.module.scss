@@ -1,0 +1,33 @@
+.wrapper {
+    padding: 16px 0;
+    a {
+        display: inline-block;
+        margin: 6px 6px 0 0;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: rgba(22, 24, 35, 0.6);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.about {
+    margin-bottom: 8px;
+}
+
+.advertise {
+    margin-bottom: 8px;
+}
+.policy {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(22, 24, 35, 0.6);
+}

@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 import Header from '~/layouts/components/Header';
 import Sidebar from '~/layouts/components/Sidebar';
-import * as ModalContext from '~/components/ModalProvider';
+import { ModalContext } from '~/components/ModalProvider';
 import ModalForm from '~/components/ModalForm';
 import styles from './DefaultLayout.module.scss';
 import GetApp from '~/components/GetApp';
@@ -18,13 +18,12 @@ function DefaultLayout({ children }) {
         <div className={cx('wrapper')}>
             <Header />
             <div className={cx('container')}>
-                <Sidebar />
+                <div className={cx('sidebar')}><Sidebar /></div>
                 <div className={cx('content')}>
                     {children}
                     <GetApp />
                 </div>
             </div>
-
             {context.active && <ModalForm onHide={context.handleHideModal} />}
         </div>
     );

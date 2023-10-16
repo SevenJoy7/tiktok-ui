@@ -12,6 +12,21 @@
     width: var(--default-layout-width, 1150px);
 }
 
+.sidebar {
+    flex-shrink: 0;
+    width: 232px;
+}
 .content {
-    flex: 1;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+//Responsive
+@media screen and (max-width: 1072px) {
+    .sidebar {
+        width: 72px;
+        border-right: 1px solid rgba(22, 24, 35, 0.02);
+        box-shadow: 1px 1px 1px rgba(22, 24, 35, 0.03);
+    }
 }

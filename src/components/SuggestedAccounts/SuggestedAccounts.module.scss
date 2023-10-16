@@ -41,3 +41,17 @@
     color: #20d5ec;
 }
 
+//Responsive
+@media screen and (max-width: 1072px) {
+    .avatar {
+        display: flex;
+        justify-content: center;
+    }
+    .item-info {
+        display: none;
+    }
+    .account-item {
+        justify-content: center;
+    }
+}
+

@@ -60,6 +60,16 @@
         }
     }
 
+    .item {
+        background-color: var(--background-modal-item-color);
+        margin-left: 0 !important;
+        border-color: rgba(22, 24, 35, 0.12);
+        font-weight: 600;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     span {
         font-size: 15px;
     }

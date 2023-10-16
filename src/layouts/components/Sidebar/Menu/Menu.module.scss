@@ -34,3 +34,13 @@
 .icon {
     display: flex;
 }
+
+//Responsive
+@media screen and (max-width: 1072px) {
+    .title {
+        display: none;
+    }
+    .menu-item {
+        justify-content: center;
+    }
+}
