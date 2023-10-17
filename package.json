@@ -26,11 +26,14 @@
     "devDependencies": {
         "babel-plugin-module-resolver": "^5.0.0",
         "customize-cra": "^1.0.0",
+        "gh-pages": "^6.0.0",
         "react-app-rewired": "^2.2.1",
         "sass": "^1.68.0"
     },
     "scripts": {
         "start": "react-app-rewired start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
         "eject": "react-app-rewired eject"

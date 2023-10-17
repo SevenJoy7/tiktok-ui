@@ -69,8 +69,12 @@
 .followers,
 .likes {
     margin-right: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
     strong {
         margin-right: 6px;
+        color: var(--text-color);
+        font-size: 1.6rem;
     }
 }
 
