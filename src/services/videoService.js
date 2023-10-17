@@ -1,6 +1,6 @@
 import * as httpRequest from '~/utils/httpRequest'
 
-export const loadVideo = async (type, page = "1") => {
+export const loadVideo = async (type, page) => {
     try {
         const response = await httpRequest.get('videos', {
             params: {

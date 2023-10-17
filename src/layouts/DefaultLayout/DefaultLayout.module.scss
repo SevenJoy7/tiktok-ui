@@ -7,15 +7,12 @@
 .container {
     margin-top: var(--default-layout-header-height);
     display: flex;
+    justify-content: space-between;
     max-width: 100%;
     padding: 0 var(--default-layout-horizontal-spacer);
     width: var(--default-layout-width, 1150px);
 }
 
-.sidebar {
-    flex-shrink: 0;
-    width: 232px;
-}
 .content {
     display: flex;
     flex: 1 1 auto;

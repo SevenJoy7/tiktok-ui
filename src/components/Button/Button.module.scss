@@ -47,7 +47,6 @@
     color: var(--primary);
     border: 1px solid currentColor;
     background-color: transparent;
-    width: 100%;
 
     &:hover {
         border: 1px solid currentColor; 
@@ -78,4 +77,5 @@
 .large {
     min-width: 140px;
     padding: 14px 16px;
+    width: 100%;
 }

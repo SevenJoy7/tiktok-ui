@@ -1,0 +1,14 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    align-items: center;
+    max-width: 692px;
+    height: unset;
+    width: unset;
+    transition-property: margin;
+    transition-duration: 0.3s;
+    margin-bottom: 0px;
+    padding: 0 16px 24px;
+}

@@ -3,9 +3,9 @@ import config from '~/config';
 //layouts
 import { HeaderOnly } from '~/layouts';
 
-import Home from '~/pages/Home';
+import Home from '~/pages/Home/Home';
 import Following from '~/pages/Following';
-import Profile from '~/pages/Profile';
+import Profile from '~/pages/Profile/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 import Live from '~/pages/Live';

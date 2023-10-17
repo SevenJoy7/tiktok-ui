@@ -5,7 +5,7 @@ import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
 import * as searchServices from '~/services/searchService';
-import { Wrapper as PopperWrapper } from '~/components/Popper';
+import Wrapper from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
 import { useDebounce } from '~/hooks';
@@ -61,15 +61,16 @@ function Search() {
         <div>
             <HeadlessTippy
                 interactive
+                appendTo={() => document.body}
                 visible={showResult && searchResult.length > 0}
                 render={(attrs) => (
                     <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                        <PopperWrapper>
+                        <Wrapper>
                             <h4 className={cx('search-title')}>Accounts</h4>
                             {searchResult.map((result) => (
                                 <AccountItem key={result.id} data={result} />
                             ))}
-                        </PopperWrapper>
+                        </Wrapper>
                     </div>
                 )}
                 onClickOutside={handleHideResult}

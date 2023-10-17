@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
-import { Wrapper as WrapperPopper } from '~/components/Popper';
+import Wrapper from '~/components/Popper';
 import styles from './Menu.module.scss';
 import MenuItem from './MenuItem';
 import Header from './Header';
@@ -40,10 +40,10 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
 
     const renderResult = (attrs) => (
         <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-            <WrapperPopper className={cx('menu-poper')}>
+            <Wrapper className={cx('menu-poper')}>
                 {history.length > 1 && <Header title={current.title} onBack={handleBack} />}
                 <div className={cx('menu-body')}>{renderItems()}</div>
-            </WrapperPopper>
+            </Wrapper>
         </div>
     );
 

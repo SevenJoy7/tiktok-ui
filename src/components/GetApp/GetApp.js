@@ -4,7 +4,7 @@ import HeadlessTippy from '@tippyjs/react/headless';
 
 import { ForwardStepIcon, PCIcon, SmartPhoneIcon, XMarkIcon } from '~/components/Icons';
 import styles from './GetApp.module.scss';
-import { Wrapper } from '../Popper';
+import Wrapper from '../Popper';
 
 const cx = classNames.bind(styles);
 

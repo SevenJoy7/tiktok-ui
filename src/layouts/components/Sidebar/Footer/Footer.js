@@ -32,7 +32,7 @@ function Footer() {
                 <Link to="https://www.tiktok.com/creators/creator-portal/en-us/" target="blank">Creator Portal</Link>
                 <Link to="https://www.tiktok.com/community-guidelines?lang=en" target="blank">Community Guidelines</Link>
             </div>
-            <p className={cx('copyright')}>© {currentYear} TikTok - Made by Hong</p>
+            <p className={cx('copyright')}>© {currentYear} TikTok - Made by BayVo</p>
         </div>
     );
 }

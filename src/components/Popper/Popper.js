@@ -5,7 +5,9 @@ import Styles from './popper.module.scss';
 const cx = classNames.bind(Styles);
 
 function Wrapper({ children, className }) {
-    return <div className={cx('wrapper', className)}>{children}</div>;
+    return <div className={cx('wrapper', className)}>
+        {children}
+    </div>;
 }
 
 Wrapper.propTypes = {
